@@ -45,24 +45,64 @@ headshots (employee profile images)
 
 Performed exploratory queries using SELECT statements to review data in each table.
 
-    # Joins & Relationships:
+ # Joins & Relationships:
 
-    Linked employees with departments via department_id.
+Linked employees with departments via department_id.
 
-    Linked employees to projects via project_assignments using employee_id and project_id.
+Linked employees to projects via project_assignments using employee_id and project_id.
 
-    # Combining Project Tables:
+# Combining Project Tables:
 
-    Merged upcoming_projects and completed_projects using UNION ALL.
+Merged upcoming_projects and completed_projects using UNION ALL.
 
-    Added a status column to distinguish between “Upcoming” and “Completed” projects.
+Added a status column to distinguish between “Upcoming” and “Completed” projects.
 
-    Created a Common Table Expression (CTE) project_status to hold combined project data.
+Created a Common Table Expression (CTE) project_status to hold combined project data.
 
-    # Built a final consolidated query (Big Table) combining:
+# Built a final consolidated query (Big Table) combining:
 
-    Employee details (ID, name, job title, salary)
+Employee details (ID, name, job title, salary)
 
-    Department information
+Department information
 
-    Project name, status, and budget.
+Project name, status, and budget.
+
+# 4.Power BI Integration
+
+Opened Power BI Desktop and selected SQL Server as the data source.
+
+Connected using server details from SQL Server properties.
+
+Used the SQL query (Big Table) as the main dataset for Power BI.
+
+# 5.Dashboard Development
+
+Designed an interactive dashboard with:
+
+Employee Info Section – Displays name, job title, salary, and headshots.
+
+Department Overview – Shows which departments are profitable or over budget.
+
+Project Status Tracking – Highlights upcoming vs. completed projects.
+
+Filters & Slicers – Allows filtering by department, project, or employee.
+
+# Key Learnings & Skills Applied
+
+Database Management: Installing and configuring SQL Server, creating databases, importing data.
+
+SQL Techniques: SELECT, JOIN, UNION ALL, CTEs, aliases, and filtering.
+
+Data Visualization: Creating interactive dashboards in Power BI connected directly to a SQL database.
+
+End-to-End Workflow: From raw data to an analytical dashboard, demonstrating real-world data analysis processes.
+
+# Outcome
+
+# A fully functional Power BI dashboard that provides:
+
+Real-time insights into departmental budgets.
+
+Identification of at-risk projects.
+
+Detailed employee and project-level information for better decision-making.
